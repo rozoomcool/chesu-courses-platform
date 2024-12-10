@@ -2,6 +2,6 @@ cd descovery-service
 ./mvnw spring-boot:run
 cd ../
 
-cd descovery-service
+cd auth-server
 ./mvnw spring-boot:run
 cd ../
