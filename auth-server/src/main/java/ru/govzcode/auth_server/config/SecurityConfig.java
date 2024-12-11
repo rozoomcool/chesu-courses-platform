@@ -1,4 +1,4 @@
-package ru.govzcode.config;
+package ru.govzcode.auth_server.config;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -137,12 +137,12 @@ public class SecurityConfig {
 		return keyPair;
 	}
 
-	@Bean (7)
+	@Bean
 	public JwtDecoder jwtDecoder(JWKSource<SecurityContext> jwkSource) {
 		return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
 	}
 
-	@Bean (8)
+	@Bean
 	public AuthorizationServerSettings authorizationServerSettings() {
 		return AuthorizationServerSettings.builder().build();
 	}
