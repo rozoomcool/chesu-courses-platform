@@ -1,10 +1,10 @@
 package ru.govzcode.user_service.entity;
 
+import jakarta.persistence.Table;
 import lombok.*;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
-@Table("users")
+@Table(name="users")
 @Getter
 @Setter
 @AllArgsConstructor
